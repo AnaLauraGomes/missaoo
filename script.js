@@ -24,7 +24,7 @@ const perguntas = [
 
 
 
-        
+
 
 
 
@@ -45,4 +45,7 @@ function mostraAlternativas(){
         caixaAlternativas.appendChild(botaoAlternativas);
 
     }
+
 }
+
+mostraPergunta();
