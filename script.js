@@ -46,8 +46,17 @@ function mostraAlternativas(){
 
     }
         
+ let atual = 0;
+ let perguntaAtual;
+ let historiaFinal = "";
+  
+ function mostraPergunta() {
+    if(atual >= perguntas.length){
+       mostraResultado();
+       return;
     }
-
-    mostraPergunta();
-    
-}
+perguntaAtual = perguntas[atual];
+caixaPerguntas.textContent = perguntaAtual.enunciado;
+caixaAlternativas.textContent = "";
+textoResultado.textContent = "";
+mostraAlternativas();
