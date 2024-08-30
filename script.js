@@ -2,11 +2,11 @@ const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultdo = document.querySelector("texto-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-    enunciado: "Qual estilo de dança é conhecido por suas técnicas e movimentos acentuados, frequentemente realizados em performances dramáticas e teatrais?"
+    enunciado: "Qual estilo de dança é conhecido por suas técnicas e movimentos acentuados, frequentemente realizados em performances dramáticas e teatrais?",
     alternativas: [
 {
     texto: "Ballet.",
@@ -15,29 +15,11 @@ const perguntas = [
 {
     texto: "Salsa",
     afirmação: "Um ritmo bastante envolvente e sensual, que tem tudo a ver com o povo latino."
-}
+},
 ]
 }
 ];
 
-let atual = 0;
-let perguntaAtual;
-
-function mostraPergunta() {
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
-}
-
-function mostraAlternativas(){
-    for (const alternativa of perguntaAtual.alternativas){
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
-        caixaAlternativas.appendChild(botaoAlternativas);
-    }
-];
-        
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
