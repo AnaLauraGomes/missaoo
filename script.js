@@ -6,25 +6,17 @@ const textoResultdo = document.querySelector("texto-resultado");
 
 const perguntas = [
     {
-    enunciado: ""
+    enunciado: "Qual estilo de dança é conhecido por suas técnicas e movimentos acentuados, frequentemente realizados em performances dramáticas e teatrais?"
     alternativas: [
-        ""
-        ""
-    ]
+{
+    texto: "Ballet.",
+    afirmação: "Uma espécie de teatro que envolvia a atuação em si com música e passos de dança, que davam mais expressão à história contada."
 },
 {
-    enunciado:""
-    alternativas: [
-        ".",
-        "."
-    ]
-},
-{
-    enunciado:
-    alternativas: [
-        ".",
-        "."
-    ]
+    texto: "Salsa",
+    afirmação: "Um ritmo bastante envolvente e sensual, que tem tudo a ver com o povo latino."
+}
+]
 }
 ];
 
